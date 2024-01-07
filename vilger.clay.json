@@ -1,0 +1,118 @@
+{
+    "texture_data": {
+        "path": "models/vilger.png",
+        "size": [64, 64],
+        "render_sides": "double"
+    },
+	"elements": [
+        {
+            "type": "group",
+			"name": "head",
+			"pivot": [8, 12, 8],
+            "rotation": [0, 0, 0],
+			"children": [
+				{
+                    "type": "cube",
+                    "origin": [4, 12, 4],
+                    "size": [8, 10, 8],
+                    "pivot": [0, 0, 0],
+                    "rotation": [0, 0, 0],
+                    "uv": [0, 0]
+                },
+				{
+                    "type": "group",
+					"name": "nose",
+					"pivot": [8, 13, 3],
+					"children": [
+                        {
+                            "type": "cube",
+                            "origin": [7, 11, 2],
+                            "size": [2, 4, 2],
+                            "to": [9, 15, 4],
+                            "uv": [24, 0]
+                        }
+                    ]
+				}
+			],
+            "visible": false
+		},
+        {
+            "type": "group",
+			"name": "body",
+			"pivot": [8, 6, 8],
+			"children": [
+                {
+                    "type": "cube",
+                    "origin": [4, 6, 5],
+                    "size": [8, 6, 6],
+                    "uv": [16, 20]
+                }
+            ]
+		},
+        {
+            "type": "group",
+			"name": "arms",
+			"pivot": [8, 12, 8],
+            "rotation": [-45, 0, 0],
+			"children": [
+                {
+                    "type": "cube",
+                    "name": "middle",
+                    "origin": [4, 5.2, 5.2],
+                    "size": [8, 4, 4],
+                    "uv": [40, 38]
+                },
+                {
+                    "type": "cube",
+                    "name": "left",
+                    "origin": [12, 5.2, 5.2],
+                    "size": [4, 8, 4],
+                    "uv": [44, 22]
+                },
+                {
+                    "type": "cube",
+                    "name": "right",
+                    "origin": [0, 5.2, 5.2],
+                    "size": [4, 8, 4],
+                    "uv": [44, 22]
+                }
+            ]
+		},
+        {
+            "type":"group",
+			"name": "right_leg",
+			"pivot": [10, 6, 8],
+			"children": [
+                {
+                    "type": "cube",
+                    "name": "right_leg",
+                    "origin": [8, 0, 6],
+                    "size": [4, 6, 4],
+                    "uv": [0, 22]
+                }
+            ]
+		},
+        {
+            "type": "group",
+			"name": "left_leg",
+			"pivot": [6, 6, 8],
+			"children": [
+                {
+                    "type": "cube",
+                    "name": "left_leg",
+                    "origin": [4, 0, 6],
+                    "size": [4, 6, 4],
+                    "uv": [0, 22]
+                }
+            ]
+		},
+        {
+            "type": "cube",
+            "origin": [4, 12, 4],
+            "size": [8, 10, 8],
+            "pivot": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "uv": [0, 0]
+        }
+	]
+}
